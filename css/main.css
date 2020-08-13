@@ -1,0 +1,1203 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+ul,
+li,
+a,
+section,
+form,
+table,
+td,
+tr,
+tbody,
+select,
+label,
+figure {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 45px;
+	line-height: 51px;
+	font-weight: 700;
+	color: #364550;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #364550;
+}
+h3 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #364550;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #20baef;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.4;
+	font-weight: 300;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+a {
+	color: inherit;
+}
+ul > li,
+li {
+	list-style: none;
+}
+
+label {
+	margin-bottom: 0.5rem;
+}
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/Proxima-Nova-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/proxima-nova-58de2d65a8e2a.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/Proxima-Nova-Black.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/Proxima-Nova-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+.wholepage {
+	width: 100%;
+	font-weight: 400;
+	min-height: 100%;
+	color: #707e81;
+	font-family: "Proxima Nova";
+}
+
+/*header*/
+#header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 999;
+}
+.menu-label-hover {
+	margin-bottom: 0;
+}
+.navbar-brand {
+	width: 230px;
+}
+.main-logo {
+	width: 100%;
+}
+.main-section {
+	width: 100%;
+	overflow-x: hidden;
+}
+.main-header {
+	position: relative;
+}
+.main-header nav {
+	position: static;
+}
+.whyvoip-icon-text li {
+	display: block;
+	margin-top: 40px;
+}
+.whyvoip-icon-text li a {
+	display: flex;
+	align-items: center;
+}
+.whyvoip-icon-text figure {
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+}
+.price-tag {
+	display: block;
+	width: 150px;
+	margin-left: auto;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	line-height: 1.2;
+}
+.price-tag strong {
+	display: block;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.whyvoip-icon-text figure img {
+	width: 90%;
+	height: 90%;
+	object-fit: contain;
+}
+.whyvoip-text h3 {
+	margin-bottom: 7px;
+}
+.whyvoip-content h4 {
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 2px solid #707070;
+}
+.content-hover-display {
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	padding-top: 90px;
+	display: none;
+}
+.hover-checkbox {
+	display: none;
+}
+
+.nav-spacing > li {
+	padding: 15px 0;
+}
+.nav-link {
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 46px;
+}
+.content-hover-display::before {
+	content: "";
+	height: 15px;
+	width: 100%;
+	display: block;
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.1),
+		rgba(255, 255, 255, 1),
+		rgba(255, 255, 255, 1)
+	);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.hover-footer {
+	margin-top: 90px;
+	background: #eff6f8;
+	padding: 15px 0;
+}
+.rouded-btn {
+	display: inline-block;
+	background: transparent;
+	border: 1px solid #707e81;
+	border-radius: 30px;
+	padding: 8px 15px;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 12px;
+}
+.rouded-btn + .rouded-btn {
+	margin-left: 25px;
+}
+.top-header {
+	background: #364550;
+	padding: 5px 0;
+}
+.nav-link i {
+	color: #a6b9be;
+	padding-left: 5px;
+}
+.top-header-menus {
+	display: flex;
+	justify-content: flex-end;
+}
+.top-header-menus > li + li {
+	padding-left: 25px;
+}
+.top-header-menus > li > a {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+}
+.top-header-menus > li > a:hover {
+	color: #e8b300;
+}
+.nav-spacing li .nav-link {
+	color: #20baef;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 14px;
+}
+.nav-spacing {
+	align-items: center;
+}
+.nav-spacing > li + li {
+	padding-left: 50px;
+}
+.self-btn {
+	line-height: 53px;
+	font-weight: 300;
+	color: #fff;
+	max-width: 254px;
+	width: 100%;
+	text-align: center;
+	background: #e8b300;
+	border-radius: 25px;
+	display: inline-block;
+	border: 0px;
+	cursor: pointer;
+}
+.self-btn i {
+	padding-left: 15px;
+	vertical-align: middle;
+	font-size: 25px;
+}
+.tab-section {
+	max-width: 1125px;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+.blue-btn {
+	background: #20baef;
+	line-height: 46px;
+	width: 208px;
+	text-align: center;
+	padding: 0;
+}
+.main-header .blue-btn {
+	color: #fff !important;
+}
+.main-header {
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+.homebanner-bg-imgae img {
+	width: 100%;
+}
+
+.main-tagline {
+	margin: 15px 0;
+}
+.main-header .navbar {
+	padding: 0;
+}
+.fluid-container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.homebanner-text-content p {
+	margin-bottom: 25px;
+}
+.homebanner-logo-section {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+.homebg-background {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.three-image-background {
+	position: absolute;
+	top: -70px;
+	right: -100px;
+	z-index: -1;
+	height: 530px;
+}
+.three-image-background img {
+	width: auto;
+	height: 100%;
+}
+/*client logo section*/
+.client-logo-section {
+	background: #f7f7fc;
+	margin-bottom: 50px;
+}
+.client-logo-section > div {
+	align-items: center;
+	width: 636px;
+	margin: 0 auto;
+}
+.client-logo-img img,
+.main-circle-image img,
+.phone-hierarchy-image img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.trust-pilot-logo {
+	padding-left: 25px;
+}
+/*ready to play section*/
+.small-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.voip-service-text-content h2,
+.voip-provider-text-section h2,
+.voip-phone-text-section h2,
+.voip-phone-m-services-text h2,
+.voip-phone-text-section h3,
+.trusted-text h2,
+.blue-back-left-text h2 {
+	margin: 10px 0;
+}
+.voip-provider-text-section {
+	padding-bottom: 25px;
+}
+.voip-phone-system {
+	padding-top: 100px;
+	padding-right: 50px;
+}
+.best-of-span {
+	color: #364550;
+	font-size: 18px;
+	font-weight: 400;
+	display: block;
+	margin: 20px 0;
+}
+
+/*voip section*/
+.voip-service-section {
+	position: relative;
+}
+.sec-back-img {
+	position: absolute;
+	height: 500px;
+	top: -231px;
+	left: -97px;
+	z-index: -1;
+}
+.sec-back-img img,
+.white-back-img img,
+.white-phone-section img {
+	height: 100%;
+	width: auto;
+}
+.voip-provider-icon-section,
+.advance-pbx-icon-text-wrapper {
+	margin: 25px;
+}
+.voip-text-icon-wrapper {
+	padding-bottom: 55px;
+}
+.voip-text-icon-wrapper,
+.pbx-icon-text {
+	display: flex;
+}
+.icon-description,
+.pbx-texts {
+	padding-left: 25px;
+}
+.voip-phone-text-section p {
+	margin-bottom: 15px;
+}
+.pbx-icon-text {
+	padding-bottom: 25px;
+}
+.advance-pbx-section {
+	background: #f7f7fc;
+	position: relative;
+	z-index: 99;
+}
+.advance-pbx-sub-section {
+	border: 10px solid #fff;
+	background: #f7f7fc;
+	border-radius: 50px;
+	padding: 45px 40px;
+}
+.white-mobile-section {
+	padding-top: 50px;
+	position: relative;
+	background: #fcfcfc;
+}
+.white-back-img {
+	position: absolute;
+	height: 950px;
+	right: -220px;
+}
+.white-phone-col {
+	align-self: flex-end;
+	max-width: calc(100% - 430px);
+	flex: 0 0 calc(100% - 430px);
+}
+.voip-free-trialbtn,
+.see-all-feature-btn,
+.trusted-text,
+.read-case-study-btn {
+	text-align: center;
+}
+.white-phone-section {
+	height: 561px;
+}
+.voip-service-col {
+	max-width: 430px;
+	flex: 0 0 430px;
+}
+.voip-service-provider-section {
+	padding-bottom: 60px;
+}
+
+.advance-pbx-col {
+	max-width: 470px;
+	flex: 0 0 470px;
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+.pbx-image-col {
+	max-width: calc(100% - 490px);
+	flex: 0 0 calc(100% - 490px);
+}
+.blue-btn.small {
+	width: 150px;
+	line-height: 40px;
+}
+.blue-btn.small i {
+	padding-left: 5px;
+	font-size: 15px;
+}
+.voip-phone-m-services {
+	padding-top: 150px;
+	background: #fcfcfc;
+	position: relative;
+}
+.phone-hierarchy-image {
+	width: 600px;
+}
+.voip-phone-m-services-text p {
+	margin-bottom: 30px;
+}
+.voip-back-img {
+	position: absolute;
+	height: 500px;
+	left: -142px;
+	top: -150px;
+}
+.voip-back-img img {
+	width: auto;
+	height: 100%;
+}
+.trusted-service-provider-section {
+	background: #fcfcfc;
+	padding-top: 90px;
+	padding-bottom: 120px;
+}
+.stat-wrapper {
+	padding-top: 40px;
+}
+.stat-wrapper strong {
+	text-transform: uppercase;
+	font-size: 26px;
+	color: #364550;
+}
+.stat-wrapper p {
+	font-size: 18px;
+	padding: 30px 0;
+	text-align: center;
+}
+.stat-image {
+	height: 75px;
+	width: 75px;
+	position: relative;
+	margin: 0 auto;
+}
+.stat-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.read-case-study-btn {
+	padding-top: 35px;
+}
+
+.bluebackground-section {
+	background: #20baef;
+	padding: 50px 0;
+}
+.blue-back-right-text p {
+	color: #fff;
+	font-size: 16px;
+}
+.small.white-btn {
+	background: #fff;
+	line-height: 40px;
+	color: #20baef;
+	width: 150px;
+}
+.blue-back-left-text h2,
+.blue-back-left-text p {
+	color: #fff;
+}
+.blue-back-right-text {
+	margin-bottom: 20px;
+}
+
+/*footer*/
+#footer {
+	padding-top: 50px;
+	background: #f7f7fc;
+	font-size: 14px;
+	font-weight: 300;
+}
+.horizontal-footer-menu {
+	background: #e2f0f4;
+	padding: 10px 0;
+}
+.copyright-section {
+	background: #a6b9be;
+}
+.footer-logo {
+	width: 165px;
+	margin-bottom: 25px;
+}
+.footer-logo img {
+	width: 100%;
+	object-fit: contain;
+}
+.footer-menus-wrapper span {
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 10px;
+}
+.footer-menus li {
+	padding-bottom: 5px;
+}
+.main-top-footer {
+	padding-bottom: 80px;
+}
+.footer-logo-number span {
+	font-weight: 400;
+}
+.footer-logo-number h4 {
+	margin-bottom: 20px;
+}
+.social-media-ul li a i {
+	color: #20baef;
+	font-size: 25px;
+}
+.social-media-ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.social-media-ul li + li {
+	padding-left: 15px;
+}
+.horizontal-row-bot {
+	align-self: center;
+}
+.horizontal-menus-ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.horizontal-menus-ul li + li {
+	padding-left: 35px;
+}
+.language-select {
+	display: flex;
+	justify-content: center;
+}
+.selected-language {
+	padding-left: 15px;
+}
+.copyright-section {
+	padding: 5px 0;
+	color: #fff;
+}
+.bluebackground-section .small-container {
+	max-width: 600px;
+}
+@media (min-width: 1530px) {
+	.small-container {
+		max-width: 1100px;
+	}
+}
+@media (max-width: 1530px) {
+	.footer-menus-wrapper span {
+		font-size: 13px;
+	}
+	#footer {
+		font-size: 12px;
+	}
+}
+@media (max-width: 1199px) {
+	.fluid-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.navbar-brand {
+		width: 150px;
+	}
+	.nav-spacing > li + li {
+		padding-left: 10px;
+	}
+	.small-container {
+		max-width: 836px;
+	}
+	.tab-section {
+		max-width: 900px;
+	}
+	.tab-section .row > div {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+	.homebanner-bg-imgae {
+		width: 600px;
+	}
+	.white-phone-section {
+		position: relative;
+		left: -120px;
+	}
+	.voip-phone-m-services .row > div {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.voip-phone-m-services-text,
+	.voip-phone-m-btn {
+		text-align: center;
+	}
+	.phone-hierarchy-image img {
+		width: 570px;
+		height: 265px;
+		margin: 0 auto;
+		display: block;
+		object-fit: contain;
+	}
+	.voip-phone-m-services .small-container {
+		max-width: 690px;
+	}
+	.voip-phone-m-services .row {
+		flex-direction: column-reverse;
+	}
+	.voip-main-text-wrap {
+		margin-bottom: 345px;
+	}
+	.voip-phone-m-services {
+		padding-top: 80px;
+	}
+	.trusted-service-provider-section {
+		padding-bottom: 60px;
+	}
+	.read-case-study-btn {
+		padding-top: 20px;
+	}
+	.phone-hierarchy-image {
+		position: absolute;
+		top: 85px;
+		width: 100%;
+		left: 0;
+	}
+	.main-top-footer > .row > div {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.footer-logo {
+		margin: 0 auto 25px;
+	}
+	.footer-logo-number {
+		text-align: center;
+	}
+	.social-media-ul {
+		justify-content: center;
+		margin-bottom: 25px;
+	}
+	.footer-logo-number h4 {
+		display: inline-block;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.main-top-footer {
+		padding-bottom: 30px;
+	}
+	.horizontal-menus-ul li + li {
+		padding-left: 20px;
+	}
+}
+
+	.nav-spacing > li:hover .content-hover-display {
+		display: block;
+	}
+	.nav-spacing > li:hover .nav-link i {
+		transform: rotate(180deg);
+		position: relative;
+		left: 5px;
+	}
+
+.mobile-header {
+	display: none;
+	position: relative;
+	z-index: 9999;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+@media (max-width: 991px) {
+	#header {
+		display: none;
+	}
+	.mobile-header {
+		display: block;
+	}
+	.tab-section {
+		max-width: 700px;
+	}
+	.main-tagline {
+		font-size: 35px;
+		line-height: 1.4;
+	}
+	.white-phone-section {
+		left: -164px;
+	}
+	.white-back-img {
+		height: 600px;
+	}
+	.voip-text-icon-wrapper {
+		padding-bottom: 35px;
+	}
+	.pbx-image-col,
+	.advance-pbx-col {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+	.advance-pbx-sub-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.top-header {
+		display: none;
+	}
+}
+/* mobile menu */
+.moobile-logo {
+	width: 130px;
+	display: block;
+}
+.moobile-logo img {
+	display: block;
+	width: 100%;
+}
+.mobile-header {
+	padding: 20px 0;
+}
+.mobile-header .container {
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.mobile-input {
+	display: none;
+}
+.mobile-menu {
+	height: 39px;
+	width: 37px;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	opacity: 0;
+	z-index: 99;
+}
+.toggle-button span {
+	display: block;
+	width: 31px;
+	height: 3px;
+	background: #20baef;
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+.toggle-button span + span {
+	margin-top: 4px;
+}
+.toggle-button {
+	background: transparent;
+	border: 0;
+	outline: none;
+}
+.toggle-button:focus {
+	outline: none;
+}
+.mobile-menu {
+	margin-bottom: 0;
+}
+.mobile-input:checked ~ .toggle-button span {
+	transform: rotate(32deg);
+	position: relative;
+	top: -2px;
+}
+.mobile-input:checked ~ .toggle-button span:first-child {
+	transform: rotate(-32deg);
+	top: 5px;
+}
+.mobile-input:checked ~ .toggle-button span:last-child {
+	display: none;
+}
+.mobile-menu-list {
+	display: none;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 100%;
+	background: #364550;
+	min-height: calc(100vh - 60px);
+}
+.mobile-input:checked ~ .mobile-menu-list{
+	display: block;
+}
+.mobile-menu-ul {
+	padding: 20px 15px;
+}
+.mobile-menu-ul > li {
+	border-bottom: 1px solid #fff;
+	position: relative;
+}
+.check-mobile-menu {
+	display: none;
+}
+.mobile-menu-ul > li label {
+	display: block;
+	margin: 0;
+	padding: 10px 0;
+}
+.mobile-menu-ul > li .span-wrapper,
+.mobile-menu-ul > li a {
+	font-weight: 300;
+	font-size: 14px;
+	color: #e8b300;
+}
+.mobile-sub-menu {
+	display: none;
+	width: 100%;
+	position: relative;
+	z-index: 999;
+}
+.block-level{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+}
+.check-mobile-menu:checked ~ .mobile-sub-menu {
+	display: block;
+	padding-left: 20px;
+}
+.span-wrapper {
+	display: flex;
+	line-height: 30px;
+	text-transform: uppercase;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.span-wrapper .mobile-menu-icons {
+	display: flex;
+	height: 18px;
+	width: 18px;
+	border-radius: 100%;
+	text-align: center;
+	background: #e8b300;
+	font-size: 14px;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+.span-wrapper .mobile-menu-icons::before {
+	content: "+";
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+}
+.mobile-sub-menu > li a {
+	display: flex;
+	align-items: center;
+}
+.mobile-sub-menu > li a {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 700;
+	padding: 12px 0;
+}
+.check-mobile-menu:checked ~ .span-wrapper .mobile-menu-icons::before{
+	content: "-";
+}
+.mobile-sub-menu > li img {
+	display: block;
+	width: 22px;
+	height: 22px;
+	object-fit: contain;
+	object-position: center;
+	filter: brightness(0) invert(1);
+	margin-right: 10px;
+}
+.mobile-sub-menu > li + li {
+	border-top: 1px solid #9d9da3;
+}
+.mobile-view, .mobile-extra-logo{
+	display: none;
+}
+/* media max-width 767 */
+@media(max-width: 767px){
+	.three-image-background{
+		width: 170px;
+	    height: 225px;
+	    object-fit: contain;
+	    object-position: center;
+	    top: -50px;
+	    right: -18px;
+	}
+	.sec-back-img{
+		width: 170px;
+	    height: 225px;
+	    object-fit: contain;
+	    object-position: center;
+	    top: -50px;
+	    right: -18px;
+	    position: absolute;
+	    left: unset;
+	}
+	.white-back-img{
+		width: 170px;
+	    height: 225px;
+	    right: unset;
+	    left: -40px;
+	    top: -50px;
+	}
+	.voip-service-col{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.tab-section .row > div{
+		position: static;
+	}
+	.tab-section .row > div, .voip-service-col, .white-phone-col{
+		width: 100%;
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.homebg-background{
+		position: static;
+	}
+	.main-section{
+		position: relative;
+		z-index: 99;
+	}
+	.tab-section{
+		max-width: 500px;
+		padding: 45px 25px;
+	}
+	.homebanner-text-content h4{
+		font-size: 14px;
+	}
+	.main-tagline{
+		font-size: 30px;
+		line-height: 1.2;
+		margin-top: 5px;
+		padding-right: 48px;
+	}
+	.homebanner-bg-imgae, .main-circle-image, .white-phone-section, .advance-pbx-section, .voip-phone-m-services {
+		display: none;
+	}
+	.mobile-view{
+		display: block;
+		position: relative;
+		left: 0;
+		top: 0px;
+		right: 0px;
+		bottom: 0;
+		width: 100%;
+		height: unset !important;
+		max-width: 100%;
+	}
+	.mobile-view img{
+		max-width: 100%;
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+	.client-logo-section > div{
+		padding: 0 15px;
+		flex-wrap: wrap;
+		max-width: 320px;
+	}
+	.client-logo-section .row > div{
+		flex: 0 0 50%;
+		max-width: 50%;
+		width: 50px;
+		padding: 10px;
+	}
+	.client-logo-img img{
+		display: block;
+		max-width: 190px;
+		width: 100%;
+		height: 90px;
+		object-position: center;
+		object-fit: contain;
+	}
+	.freetrial-btn.voip-free-btn{
+		text-align: center;
+		padding-bottom: 45px;
+	}
+	.mobile-extra-logo{
+		display: block;
+		background: #364550;
+		padding: 20px 0;
+		position: relative;
+		z-index: 99;
+	}
+	.mobile-extra-wrap{
+		padding-right: 25px;
+		padding-left: 25px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+	.mobile-extra-content h4{
+		line-height: 1;
+		font-size: 30px;
+		color: #fff;
+		font-weight: 300;
+	}
+	.mobile-extra-content{
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 1;
+		color: #fff;
+	}
+	.voip-provider-icon-section{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.trusted-service-provider-section{
+		padding-top: 10px;
+		position: relative;
+	}
+	.trusted-service-provider-section::before{
+		content: "";
+		background: transparent url('../images/background-images-three.png') no-repeat scroll 0 0 / contain;
+		width: 170px;
+	    height: 225px;
+	    top: 140px;
+    	right: -20px;
+	    position: absolute;
+	}
+	.trusted-text{
+		text-align: left;
+	}
+	.trusted-service-provider-section .container{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.trusted-stats > .row{
+		display: block;
+	}
+	.trusted-stats .stat-wrapper{
+		display: flex;
+		text-align: left;
+		align-items: center;
+	}
+	.stat-image{
+		margin: 0 15px 0 0;
+	}
+	.stat-wrapper p{
+		text-align: left;
+	}
+	.stat-wrapper{
+		max-width: 342px;
+		padding-top: 20px;
+	}
+	.bluebackground-section{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.bluebackground-section .container{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.footer-logo-number{
+		text-align: left;
+	}
+	.footer-logo-number h4{
+		margin-left: 0px;
+		margin-right: 0px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	#footer .container{
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.footer-logo{
+		margin-left: 0;
+	}
+	.social-media-ul{
+		justify-content: flex-start;
+	}
+	.main-top-footer .col-md-9 .row > div{
+		flex: 0 0 50%;
+		margin-bottom: 20px;
+		max-width: 50%;
+	}
+	.horizontal-footer-menu .row > .col-md-8{
+		flex: 0 0 60%;
+		max-width: 60%;
+	} 
+	.horizontal-footer-menu .row > .col-md-4{
+		flex: 0 0 40%;
+		max-width: 40%;
+		display: flex;
+		justify-content: flex-start;
+	}
+	.main-top-footer{
+		padding-bottom: 0px;
+	}
+	.horizontal-footer-menu{
+		padding-top: 20px;
+	}
+	.horizontal-menus-ul{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.horizontal-menus-ul > li{
+		margin-left: 0px;
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 10px;
+		padding-left: 0px !important;
+	}
+}
